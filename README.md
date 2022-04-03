@@ -1,5 +1,7 @@
 <h1 align="center">smartPulse Stajyer Teknik Mülakat Ödevi</h1>
 
+## Canlı Önizlemesi (<a href='https://rahmancaylak-smartpulse-stajyer.netlify.app/'>Live</a>)
+
 ### Hangi Teknolojiler Kullanıldı
 
 - React v18.0.0 (useState, useEffect, customHooks)
@@ -9,7 +11,7 @@
 
 ![output](./output.gif)
 
-## Kurulum
+## Local Kurulum
 
 <p>Cors hatası almamak için server kurulumunu yapmamız gerekiyor. Server Kurulumu için <a href='https://github.com/rahmancaylak/smartpulse-stajyer-mulakat-server'>tıklayınız</a>.</p>
 

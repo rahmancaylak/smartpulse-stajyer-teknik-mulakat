@@ -5,6 +5,15 @@ import Form from './components/Form';
 // Custom Hooks
 import { useApiDate } from './hooks/useApiDate';
 import { useFetchApi } from './hooks/useFetchApi';
+// Tailwind Styled Components
+import {
+  Container,
+  Table,
+  Thead,
+  TheadTr,
+  TheadTh,
+  Tbody,
+} from './styles/Form';
 
 export default function App() {
   const [conract, setConract] = useState([]);
@@ -28,23 +37,23 @@ export default function App() {
     return <Loading />;
   } else {
     return (
-      <>
-        <table>
-          <thead>
-            <tr>
-              <th>Conract</th>
-              <th>Toplam İşlem Miktarı</th>
-              <th>Toplam İşlem Tutarı</th>
-              <th>Ortalama Fiyat</th>
-            </tr>
-          </thead>
-          <tbody>
+      <Container>
+        <Table>
+          <Thead>
+            <TheadTr>
+              <TheadTh>Tarih</TheadTh>
+              <TheadTh>Toplam İşlem Miktarı (MWh)</TheadTh>
+              <TheadTh>Toplam İşlem Tutarı (TL)</TheadTh>
+              <TheadTh>Ağırlık Ortalama Fiyat (TL/MWh)</TheadTh>
+            </TheadTr>
+          </Thead>
+          <Tbody>
             {conract.map((item) => (
               <Form key={item} apiData={apiData} item={item}></Form>
             ))}
-          </tbody>
-        </table>
-      </>
+          </Tbody>
+        </Table>
+      </Container>
     );
   }
 }

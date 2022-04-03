@@ -1,7 +1,7 @@
 {
   "name": "smartpulse-stajyer-teknik-mulakat",
   "version": "0.1.0",
-  "proxy":"http://localhost:8080",
+  "proxy": "http://localhost:8080",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -35,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
   }
 }
